@@ -1,0 +1,8 @@
+<h2>We've sent you an SMS. Please enter the code you've received below:</h2>
+<%= form_tag do %>
+<%= label_tag(:code, "One-time code") %>
+<%= text_field_tag(:code) %>
+<%= submit_tag("Log me in!") %>
+<% end %>
+
+<%= @token %>
